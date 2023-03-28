@@ -14,14 +14,6 @@ sqlite> CREATE TABLE DEPARTMENT(
 );
 
 
-sqlite> CREATE TABLE SNP(
-   ID             INT PRIMARY KEY      NOT NULL,
-   Date           CHAR(50) NOT NULL,
-   StockName      CHAR(50) NOT NULL,
-   StockSymbol    CHAR(50) NOT NULL,
-   StockPrice     CHAR(50) NOT NULL,
-   StockRank      CHAR(50) NOT NULL
-);
 
 sqlite> .schema
 
@@ -46,13 +38,16 @@ VALUES (2, 'Allen', 25, 'Texas', 15000.00 );
 INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY)
 VALUES (3, 'Teddy', 23, 'Norway', 20000.00 );
 
-CREATE TABLE SNP(
-   ID INT PRIMARY KEY      NOT NULL,
-   Date                 
-   StockName           CHAR(50) NOT NULL,
-   StockSymbol         CHAR(50) NOT NULL,
-   INT      NOT NULL
+sqlite> CREATE TABLE SNP(
+   ID INTEGER PRIMARY KEY AUTOINCREMENT,
+   Date           CHAR(50) NOT NULL,
+   StockName      CHAR(50) NOT NULL,
+   StockSymbol    CHAR(50) NOT NULL,
+   StockPrice     CHAR(50) NOT NULL,
+   StockRank      CHAR(50) NOT NULL
 );
+
+INSERT INTO SNP (Date,StockName, StockSymbol, StockPrice, StockRank) Values ( 28/3/2023,"Zimmer Biomet - ZBH","ZBH",   126.00 ,"BUY");
 
 
 Data Types
