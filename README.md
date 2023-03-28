@@ -1,6 +1,12 @@
 # sqlite3-tutorial
 
 ```
+$ sqlite3 test.db
+
+
+ls -ptlr - will show the test.db created.
+
+
 sqlite> CREATE TABLE DEPARTMENT(
    ID INT PRIMARY KEY      NOT NULL,
    DEPT           CHAR(50) NOT NULL,
