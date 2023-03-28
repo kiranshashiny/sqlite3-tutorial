@@ -6,6 +6,10 @@ $ sqlite3 test.db
 
 ls -ptlr - will show the test.db created.
 
+## Reading from external file
+
+.read batch_file.sql
+
 
 sqlite> CREATE TABLE DEPARTMENT(
    ID INT PRIMARY KEY      NOT NULL,
