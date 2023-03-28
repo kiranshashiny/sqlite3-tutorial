@@ -8,9 +8,23 @@ sqlite> CREATE TABLE DEPARTMENT(
 );
 
 
+sqlite> CREATE TABLE SNP(
+   ID             INT PRIMARY KEY      NOT NULL,
+   Date           CHAR(50) NOT NULL,
+   StockName      CHAR(50) NOT NULL,
+   StockSymbol    CHAR(50) NOT NULL,
+   StockPrice     CHAR(50) NOT NULL,
+   StockRank      CHAR(50) NOT NULL
+);
+
+sqlite> .schema
+
 
 sqlite>.tables
 COMPANY     DEPARTMENT
+
+sqlite>.schema DEPARTMENT
+
 
 
 sqlite>DROP TABLE COMPANY;
