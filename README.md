@@ -42,16 +42,16 @@ VALUES (2, 'Allen', 25, 'Texas', 15000.00 );
 INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY)
 VALUES (3, 'Teddy', 23, 'Norway', 20000.00 );
 
-sqlite> CREATE TABLE SNP(
+sqlite> CREATE TABLE ZACKS_SNP(
    ID INTEGER PRIMARY KEY AUTOINCREMENT,
    Date           CHAR(50) NOT NULL,
    StockName      CHAR(50) NOT NULL,
    StockSymbol    CHAR(50) NOT NULL,
-   StockPrice     CHAR(50) NOT NULL,
+   StockPrice     REAL,
    StockRank      CHAR(50) NOT NULL
 );
 
-INSERT INTO SNP (Date,StockName, StockSymbol, StockPrice, StockRank) Values ( 28/3/2023,"Zimmer Biomet - ZBH","ZBH",   126.00 ,"BUY");
+INSERT INTO ZACKS_SNP (Date,StockName, StockSymbol, StockPrice, StockRank) Values ( "28/3/2023","Zimmer Biomet - ZBH","ZBH",   126.00 ,"BUY");
 
 
 Data Types
