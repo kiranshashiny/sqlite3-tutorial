@@ -53,6 +53,11 @@ sqlite> CREATE TABLE ZACKS_SNP(
 
 INSERT INTO ZACKS_SNP (Date,StockName, StockSymbol, StockPrice, StockRank) Values ( "28/3/2023","Zimmer Biomet - ZBH","ZBH",   126.00 ,"BUY");
 
+results.sql
+
+1,$s/^/INSERT INTO ZACKS_SNP (Date,StockName, StockSymbol, StockPrice, StockRank) Values (/g
+
+1,$s/$/);/g
 
 Data Types
 1	NULL The value is a NULL value.
